@@ -312,8 +312,52 @@ a.social {
 }
 
 #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 70vh;
 }
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255,122,0,0.1), transparent);
+  border-radius: var(--radius);
+  padding: 60px 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.error-page h1 {
+  font-size: 120px;
+  margin: 0;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.error-page h2 {
+  font-size: 28px;
+  margin: 16px 0;
+  color: var(--text);
+}
+
+.error-page p {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.error-page .btn-primary {
+  font-size: 15px;
+  padding: 12px 20px;
+}
+
 
 @media (max-width: 850px) {
   .curved-container {
@@ -322,6 +366,7 @@ a.social {
     padding:30px;
   }
 }
+
 
 
 
